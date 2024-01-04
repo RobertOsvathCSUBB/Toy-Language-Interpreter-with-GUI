@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.robi.ProgramViewController">
+   <children>
+      <TextField fx:id="initialProgram" alignment="CENTER" editable="false" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nrOfProgramStates" alignment="CENTER" editable="false" VBox.vgrow="ALWAYS" />
+      <HBox prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="Heap" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="Out" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="200.0" text="FileTable" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="heapTable" prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="outList" prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="fileTable" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <ComboBox fx:id="threadList" prefWidth="150.0" promptText="Choose a thread" />
+      <HBox prefHeight="27.2" prefWidth="200.0" VBox.vgrow="NEVER">
+         <children>
+            <Label alignment="CENTER" prefWidth="300.0" text="ExeStack" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefWidth="300.0" text="SymTable">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="115.0" prefWidth="600.0">
+         <children>
+            <ListView fx:id="stackList" prefHeight="200.0" prefWidth="300.0" />
+            <TableView fx:id="symTable" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#oneStepForAllPrg" prefHeight="30.0" prefWidth="678.0" text="Run one step" />
+   </children>
+</VBox>

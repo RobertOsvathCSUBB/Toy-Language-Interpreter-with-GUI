@@ -1,0 +1,418 @@
+
+------------------------
+
+ID: 6
+ExeStack:
+{ Ref(int) v | new(v, 20) | Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ Ref(int) v; new(v, 20) | Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ Ref(int) v; new(v, 20) | Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(v, 20) | Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ v -> (0, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(v, 20) | Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ v -> (0, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(v, 20); Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ v -> (0, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(v, 20); Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ v -> (0, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ Ref(Ref(int)) a | new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ Ref(Ref(int)) a; new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ Ref(Ref(int)) a; new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ a -> (0, Ref(int)); v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(a, v) | new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ a -> (0, Ref(int)); v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(a, v); new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ a -> (0, Ref(int)); v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(a, v); new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ a -> (0, Ref(int)); v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ a -> (2, Ref(int)); v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; 2 -> (1, int); }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(v, 30) | print(rH(rH(a))); }
+SymTable:
+{ a -> (2, Ref(int)); v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; 2 -> (1, int); }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(v, 30); print(rH(rH(a))); }
+SymTable:
+{ a -> (2, Ref(int)); v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; 2 -> (1, int); }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ new(v, 30); print(rH(rH(a))); }
+SymTable:
+{ a -> (2, Ref(int)); v -> (1, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; 2 -> (1, int); }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ print(rH(rH(a))); }
+SymTable:
+{ a -> (2, Ref(int)); v -> (3, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; 2 -> (3, int); 3 -> 30; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ print(rH(rH(a))); }
+SymTable:
+{ a -> (2, Ref(int)); v -> (3, int); }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ 1 -> 20; 2 -> (3, int); 3 -> 30; }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 6
+ExeStack:
+{ }
+SymTable:
+{ a -> (2, Ref(int)); v -> (3, int); }
+Out:
+[ 30, ]
+FileTable:
+{ }
+Heap:
+{ 2 -> (3, int); 3 -> 30; }
+
+
+
+------------------------
+

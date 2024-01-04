@@ -1,0 +1,798 @@
+
+------------------------
+
+ID: 7
+ExeStack:
+{ int a | a = 1 | while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ int a; a = 1 | while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ int a; a = 1 | while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = 1 | while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = 1 | while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 1; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 1; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a) | a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 1; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a) | a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 1; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a); a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 1; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a); a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 1; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 1; }
+Out:
+[ 1, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 1; }
+Out:
+[ 1, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 2; }
+Out:
+[ 1, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 2; }
+Out:
+[ 1, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a) | a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 2; }
+Out:
+[ 1, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a) | a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 2; }
+Out:
+[ 1, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a); a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 2; }
+Out:
+[ 1, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a); a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 2; }
+Out:
+[ 1, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 2; }
+Out:
+[ 1, 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 2; }
+Out:
+[ 1, 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 3; }
+Out:
+[ 1, 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 3; }
+Out:
+[ 1, 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a) | a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 3; }
+Out:
+[ 1, 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a) | a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 3; }
+Out:
+[ 1, 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a); a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 3; }
+Out:
+[ 1, 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a); a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 3; }
+Out:
+[ 1, 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 3; }
+Out:
+[ 1, 2, 3, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 3; }
+Out:
+[ 1, 2, 3, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 4; }
+Out:
+[ 1, 2, 3, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 4; }
+Out:
+[ 1, 2, 3, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a) | a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 4; }
+Out:
+[ 1, 2, 3, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a) | a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 4; }
+Out:
+[ 1, 2, 3, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a); a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 4; }
+Out:
+[ 1, 2, 3, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ print(a); a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 4; }
+Out:
+[ 1, 2, 3, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 4; }
+Out:
+[ 1, 2, 3, 4, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ a = a + 1; while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 4; }
+Out:
+[ 1, 2, 3, 4, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 5; }
+Out:
+[ 1, 2, 3, 4, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ while (a <= 4) {print(a) | a = a + 1}; }
+SymTable:
+{ a -> 5; }
+Out:
+[ 1, 2, 3, 4, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 7
+ExeStack:
+{ }
+SymTable:
+{ a -> 5; }
+Out:
+[ 1, 2, 3, 4, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+

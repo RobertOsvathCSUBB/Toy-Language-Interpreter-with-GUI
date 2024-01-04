@@ -1,0 +1,304 @@
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v | v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v | v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v | v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v | v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2 | print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2 | print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(v); }
+SymTable:
+{ v -> 2; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(v); }
+SymTable:
+{ v -> 2; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ }
+SymTable:
+{ v -> 2; }
+Out:
+[ 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
