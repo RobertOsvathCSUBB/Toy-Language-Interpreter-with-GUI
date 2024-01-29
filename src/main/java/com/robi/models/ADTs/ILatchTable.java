@@ -1,4 +1,7 @@
 package com.robi.models.ADTs;
+import java.util.Collection;
+import java.util.Map.Entry;
+
 import com.robi.models.exception.MyException;
 
 public interface ILatchTable 
@@ -11,4 +14,5 @@ public interface ILatchTable
     Boolean contains(Integer key);
     Integer size();
     Boolean isEmpty();
+    Collection<Entry<Integer, Integer>> entrySet();
 }

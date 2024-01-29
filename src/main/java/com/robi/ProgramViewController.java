@@ -17,6 +17,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import com.robi.models.ADTs.IHeap;
+import com.robi.models.ADTs.ILatchTable;
 import com.robi.models.ADTs.IMap;
 import com.robi.models.ADTs.IStack;
 import com.robi.models.ADTs.MyHeap;
@@ -46,6 +47,7 @@ public class ProgramViewController
     private ObservableList<String> threadIDs;
     private ObservableList<String> stackEntries;
     private ObservableList<Pair<String, String>> symTableEntries;
+    private ObservableList<Pair<Integer, Integer>> latchTableEntries;
 
     @FXML
     private TextField initialProgram;
@@ -63,6 +65,8 @@ public class ProgramViewController
     private ListView<String> stackList;
     @FXML
     private TableView<Pair<String, String>> symTable;
+    @FXML
+    private TableView<Pair<Integer, Integer>> latchTable;
 
     public ProgramViewController()
     {
@@ -74,6 +78,7 @@ public class ProgramViewController
         this.threadIDs = FXCollections.observableArrayList();
         this.stackEntries = FXCollections.observableArrayList();
         this.symTableEntries = FXCollections.observableArrayList();
+        this.latchTableEntries = FXCollections.observableArrayList();
         
         this.initialProgram = new TextField();
         this.nrOfProgramStates = new TextField();
@@ -94,10 +99,19 @@ public class ProgramViewController
         this.symTable = new TableView<>();
         TableColumn<Pair<String, String>, String> nameColumn = new TableColumn<>("Name");
         nameColumn.setCellValueFactory(p -> new SimpleStringProperty(p.getValue().getKey()));
-        nameColumn.setMinWidth(150);
+        nameColumn.setMinWidth(100);
         TableColumn<Pair<String, String>, String> valueColumn2 = new TableColumn<>("Value");
         valueColumn2.setCellValueFactory(p -> new SimpleStringProperty(p.getValue().getValue()));
-        valueColumn2.setMinWidth(150);
+        valueColumn2.setMinWidth(100);
+
+        this.latchTable = new TableView<>();
+        TableColumn<Pair<Integer, Integer>, Integer> locationCol = new TableColumn<>("Location");
+        locationCol.setCellValueFactory(p -> new SimpleIntegerProperty(p.getValue().getKey()).asObject());
+        locationCol.setMinWidth(100);
+        TableColumn<Pair<Integer, Integer>, Integer> counterCol = new TableColumn<>("Count");
+        counterCol.setCellValueFactory(p -> new SimpleIntegerProperty(p.getValue().getKey()).asObject());
+        counterCol.setMinWidth(100);
+
 
         Platform.runLater(() -> {
             this.heapTable.getColumns().addAll(locationColumn, valueColumn);
@@ -118,6 +132,8 @@ public class ProgramViewController
             this.stackList.setItems(stackEntries);
             this.symTable.getColumns().addAll(nameColumn, valueColumn2);
             this.symTable.setItems(this.symTableEntries);
+            this.latchTable.getColumns().addAll(locationCol, counterCol);
+            this.latchTable.setItems(this.latchTableEntries);
         });
     }
 
@@ -293,7 +309,7 @@ public class ProgramViewController
                                                              .map(IStack::getAll)
                                                              .flatMap(Collection::stream)
                                                              .map(IStatement::toString)
-                                                            .collect(Collectors.toList());
+                                                             .collect(Collectors.toList());
         Collections.reverse(newStackEntries);
         this.stackEntries.clear();
         this.stackEntries.addAll(newStackEntries);
@@ -307,6 +323,12 @@ public class ProgramViewController
                                                            .flatMap(Collection::stream)
                                                            .map(e -> new Pair<>(e.getKey(), e.getValue().toString()))
                                                            .collect(Collectors.toList())
+        );
+
+        this.latchTableEntries.clear();
+        this.latchTableEntries.addAll(this.repo.getPrgList().get(0).getLatchTable().entrySet().stream()
+                                                                                        .map(e -> new Pair<>(e.getKey(), e.getValue()))
+                                                                                        .collect(Collectors.toList())
         );
     }
 }

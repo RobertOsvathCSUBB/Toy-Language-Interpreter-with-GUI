@@ -110,6 +110,6 @@ public class PrgState
     public String toString()
     {
         return "ID: " + this.uniqueId + "\nExeStack:\n" + this.exeStack.toString() + "\nSymTable:\n" + this.symTable.toString() + "\nOut:\n" + this.out.toString() 
-        + "\nFileTable:\n" + this.fileTable.toString() + "\nHeap:\n" + this.heap.toString() + "\n\n";
+        + "\nFileTable:\n" + this.fileTable.toString() + "\nHeap:\n" + this.heap.toString() + "\nLatchTable:\n" + this.latchTable.toString() + "\n\n";
     }
 }

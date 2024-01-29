@@ -68,7 +68,7 @@
          <children>
             <ListView fx:id="stackList" prefHeight="200.0" prefWidth="200.0" />
             <TableView fx:id="symTable" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-            <TableView prefHeight="200.0" prefWidth="200.0" />
+            <TableView fx:id="latchTable" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </HBox>
       <Button mnemonicParsing="false" onAction="#oneStepForAllPrg" prefHeight="30.0" prefWidth="678.0" text="Run one step" />

@@ -1,6 +1,8 @@
 package com.robi.models.ADTs;
+import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import com.robi.models.exception.MyException;
+import java.util.Map.Entry;
 
 public class MyLatchTable implements ILatchTable
 {
@@ -56,5 +58,19 @@ public class MyLatchTable implements ILatchTable
     public Boolean isEmpty()
     {
         return this.data.isEmpty();
+    }
+
+    public Collection<Entry<Integer, Integer>> entrySet()
+    {
+        return this.data.entrySet();
+    }
+
+    public String toString()
+    {
+        String res = "{ ";
+        for (Integer key : this.data.keySet())
+            res += key.toString() + " -> " + this.data.get(key).toString() + "; ";
+        res += "}";
+        return res;
     }
 }

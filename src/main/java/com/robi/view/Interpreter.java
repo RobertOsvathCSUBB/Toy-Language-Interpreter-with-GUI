@@ -14,11 +14,15 @@ import com.robi.models.expressions.ValueExpression;
 import com.robi.models.expressions.VarExpression;
 import com.robi.models.state.PrgState;
 import com.robi.models.statements.AssignStatement;
+import com.robi.models.statements.AwaitStatement;
 import com.robi.models.statements.CloseStatement;
 import com.robi.models.statements.CompStatement;
+import com.robi.models.statements.CondAssignStatement;
+import com.robi.models.statements.CountDownStatement;
 import com.robi.models.statements.ForkStatement;
 import com.robi.models.statements.IStatement;
 import com.robi.models.statements.IfStatement;
+import com.robi.models.statements.NewLatchStatement;
 import com.robi.models.statements.NewStatement;
 import com.robi.models.statements.OpenStatement;
 import com.robi.models.statements.PrintStatement;
@@ -201,6 +205,106 @@ public class Interpreter
                 )
         );
 
+        IStatement fork1 = new CompStatement(
+            new WriteHeap("v3", new ArithExpression(new ReadHeap(new VarExpression("v3")), new ValueExpression(new IntValue(10)), "*")),
+            new CompStatement(
+                new PrintStatement(new ReadHeap(new VarExpression("v3"))),
+                new CountDownStatement("cnt")
+            )
+        );
+
+        IStatement fork2 = new CompStatement(
+            new WriteHeap("v2", new ArithExpression(new ReadHeap(new VarExpression("v2")), new ValueExpression(new IntValue(10)), "*")),
+            new CompStatement(
+                new PrintStatement(new ReadHeap(new VarExpression("v2"))),
+                new CompStatement(
+                    new CountDownStatement("cnt"),
+                    new ForkStatement(fork1)
+                )
+            )
+        );
+
+        IStatement fork3 = new CompStatement(
+            new WriteHeap("v1", new ArithExpression(new ReadHeap(new VarExpression("v1")), new ValueExpression(new IntValue(10)), "*")),
+            new CompStatement(
+                new PrintStatement(new ReadHeap(new VarExpression("v1"))),
+                new CompStatement(
+                    new CountDownStatement("cnt"),
+                    new ForkStatement(fork2)
+                )
+            )
+        );
+
+        IStatement program9 = new CompStatement(
+            new VarDeclaration("v1", new RefType(new IntType())),
+            new CompStatement(
+                new VarDeclaration("v2",new RefType(new IntType())),
+                new CompStatement(
+                    new VarDeclaration("v3", new RefType(new IntType())),
+                    new CompStatement(
+                        new VarDeclaration("cnt", new IntType()),
+                        new CompStatement(
+                            new NewStatement("v1", new ValueExpression(new IntValue(2))),
+                            new CompStatement(
+                                new NewStatement("v2", new ValueExpression(new IntValue(3))),
+                                new CompStatement(
+                                    new NewStatement("v3", new ValueExpression(new IntValue(4))),
+                                    new CompStatement(
+                                        new NewLatchStatement("cnt", new ReadHeap(new VarExpression("v2"))),
+                                        new CompStatement(
+                                            new ForkStatement(fork3),
+                                            new CompStatement(
+                                                new AwaitStatement("cnt"),
+                                                new CompStatement(
+                                                    new PrintStatement(new ValueExpression(new IntValue(100))),
+                                                    new CompStatement(
+                                                        new CountDownStatement("cnt"),
+                                                        new PrintStatement(new ValueExpression(new IntValue(100)))
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        );
+
+        IStatement program10 = new CompStatement(
+            new VarDeclaration("a", new RefType(new IntType())),
+            new CompStatement(
+                new VarDeclaration("b", new RefType(new IntType())),
+                new CompStatement(
+                    new VarDeclaration("v", new IntType()),
+                    new CompStatement(
+                        new NewStatement("a", new ValueExpression(new IntValue(0))),
+                        new CompStatement(
+                            new NewStatement("b", new ValueExpression(new IntValue(0))),
+                            new CompStatement(
+                                new WriteHeap("a", new ValueExpression(new IntValue(1))),
+                                new CompStatement(
+                                    new WriteHeap("b", new ValueExpression(new IntValue(2))),
+                                    new CompStatement(
+                                        new CondAssignStatement("v", new RelationalExpression(new ReadHeap(new VarExpression("a")), new ReadHeap(new VarExpression("b")), "<"), new ValueExpression(new IntValue(100)), new ValueExpression(new IntValue(200))),
+                                        new CompStatement(
+                                            new PrintStatement(new VarExpression("v")),
+                                            new CompStatement(
+                                                new CondAssignStatement("v", new RelationalExpression(new ArithExpression(new ReadHeap(new VarExpression("b")), new ValueExpression(new IntValue(2)), "-"), new ReadHeap(new VarExpression("a")), ">"), new ValueExpression(new IntValue(100)), new ValueExpression(new IntValue(200))),
+                                                new PrintStatement(new VarExpression("v"))
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        );
+
         List<PrgState> programs = new ArrayList<PrgState>();
 
         try {
@@ -270,6 +374,24 @@ public class Interpreter
             program8.typecheck(new MyMap<String, IType>());
             PrgState state8 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program8);
             programs.add(state8);
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            program9.typecheck(new MyMap<String, IType>());
+            PrgState state9 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program9);
+            programs.add(state9);
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            program10.typecheck(new MyMap<String, IType>());
+            PrgState state10 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program10);
+            programs.add(state10);
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
