@@ -1,0 +1,1330 @@
+
+------------------------
+
+ID: 3
+ExeStack:
+{ bool a | a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ bool a; a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ bool a; a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> false; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> false; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ a = 2 < 3; int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> false; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ a = 2 < 3; int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> false; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int v; if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int v; if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ if (a) then {v = 2} else {v = 3}; print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ if (a) then {v = 2} else {v = 3}; print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(v); }
+SymTable:
+{ a -> true; v -> 2; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(v); }
+SymTable:
+{ a -> true; v -> 2; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ }
+SymTable:
+{ a -> true; v -> 2; }
+Out:
+[ 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ bool a | a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ bool a; a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ bool a; a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> false; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ a = 2 < 3 | int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> false; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ a = 2 < 3; int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> false; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ a = 2 < 3; int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> false; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int v | if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int v; if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int v; if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ if (a) then {v = 2} else {v = 3} | print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ if (a) then {v = 2} else {v = 3}; print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ if (a) then {v = 2} else {v = 3}; print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ a -> true; v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ string varf | varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ string varf; varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ string varf; varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> ; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> ; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ varf = test.in; openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> ; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ varf = test.in; openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> ; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ openRFile(varf); int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ openRFile(varf); int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int varc; readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ int varc; readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 0; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 0; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ readFile(varf, varc); print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 0; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ readFile(varf, varc); print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 0; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(varc); readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(varc); readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ readFile(varf, varc); print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ readFile(varf, varc); print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(varc); closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ print(varc); closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, 50, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, 50, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@35f2d34d; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 3
+ExeStack:
+{ }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, 50, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+

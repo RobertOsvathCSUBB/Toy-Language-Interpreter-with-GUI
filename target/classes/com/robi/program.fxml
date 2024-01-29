@@ -47,12 +47,17 @@
       <ComboBox fx:id="threadList" prefWidth="150.0" promptText="Choose a thread" />
       <HBox prefHeight="27.2" prefWidth="200.0" VBox.vgrow="NEVER">
          <children>
-            <Label alignment="CENTER" prefWidth="300.0" text="ExeStack" HBox.hgrow="ALWAYS">
+            <Label alignment="CENTER" prefWidth="200.0" text="ExeStack" HBox.hgrow="ALWAYS">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" prefWidth="300.0" text="SymTable">
+            <Label alignment="CENTER" prefWidth="200.0" text="SymTable">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="200.0" text="SomeTable" textAlignment="CENTER">
                <font>
                   <Font size="18.0" />
                </font>
@@ -61,8 +66,9 @@
       </HBox>
       <HBox prefHeight="115.0" prefWidth="600.0">
          <children>
-            <ListView fx:id="stackList" prefHeight="200.0" prefWidth="300.0" />
-            <TableView fx:id="symTable" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+            <ListView fx:id="stackList" prefHeight="200.0" prefWidth="200.0" />
+            <TableView fx:id="symTable" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <TableView prefHeight="200.0" prefWidth="200.0" />
          </children>
       </HBox>
       <Button mnemonicParsing="false" onAction="#oneStepForAllPrg" prefHeight="30.0" prefWidth="678.0" text="Run one step" />

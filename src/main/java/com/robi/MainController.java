@@ -1,6 +1,7 @@
 package com.robi;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
 import java.io.IOException;
 import java.util.List;
@@ -47,6 +48,12 @@ public class MainController implements Initializable
     @FXML
     public void runSelectedCommand() throws IOException
     {
+        if (this.selectedProgram == null)
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "No program selected!");
+            alert.setHeaderText("Please select a program to run!");
+            alert.showAndWait();
+        }
         App.openProgramRunWindow(this.selectedProgram);
     }
 }

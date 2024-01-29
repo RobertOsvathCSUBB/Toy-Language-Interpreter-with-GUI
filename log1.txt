@@ -302,3 +302,1067 @@ Heap:
 
 ------------------------
 
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v | v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2 | print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2 | print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(v); }
+SymTable:
+{ v -> 2; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(v); }
+SymTable:
+{ v -> 2; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ }
+SymTable:
+{ v -> 2; }
+Out:
+[ 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int a | a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int a; a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int a; a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ a = 2 + 3 * 5; int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ a = 2 + 3 * 5; int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int b; b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int b; b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; b -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; b -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ b = a - 4 / 2 + 7; print(b); }
+SymTable:
+{ a -> 17; b -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ b = a - 4 / 2 + 7; print(b); }
+SymTable:
+{ a -> 17; b -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(b); }
+SymTable:
+{ a -> 17; b -> 22; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(b); }
+SymTable:
+{ a -> 17; b -> 22; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ }
+SymTable:
+{ a -> 17; b -> 22; }
+Out:
+[ 22, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int a | a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int a; a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int a; a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ a = 2 + 3 * 5 | int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ a = 2 + 3 * 5; int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ a = 2 + 3 * 5; int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int b | b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int b; b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int b; b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; b -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ b = a - 4 / 2 + 7 | print(b); }
+SymTable:
+{ a -> 17; b -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ b = a - 4 / 2 + 7; print(b); }
+SymTable:
+{ a -> 17; b -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ b = a - 4 / 2 + 7; print(b); }
+SymTable:
+{ a -> 17; b -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(b); }
+SymTable:
+{ a -> 17; b -> 22; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(b); }
+SymTable:
+{ a -> 17; b -> 22; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ }
+SymTable:
+{ a -> 17; b -> 22; }
+Out:
+[ 22, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v | v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ int v; v = 2 | print(v); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2 | print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2 | print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ v = 2; print(v); }
+SymTable:
+{ v -> 0; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(v); }
+SymTable:
+{ v -> 2; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ print(v); }
+SymTable:
+{ v -> 2; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 1
+ExeStack:
+{ }
+SymTable:
+{ v -> 2; }
+Out:
+[ 2, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+

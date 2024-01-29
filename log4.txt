@@ -1,0 +1,646 @@
+
+------------------------
+
+ID: 4
+ExeStack:
+{ string varf | varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ string varf; varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ string varf; varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> ; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ varf = test.in | openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> ; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ varf = test.in; openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> ; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ varf = test.in; openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> ; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ openRFile(varf) | int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ openRFile(varf); int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ openRFile(varf); int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ int varc | readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ int varc; readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ int varc; readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 0; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ readFile(varf, varc) | print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 0; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ readFile(varf, varc); print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 0; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ readFile(varf, varc); print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 0; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ print(varc) | readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ print(varc); readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ print(varc); readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ readFile(varf, varc) | print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ readFile(varf, varc); print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ readFile(varf, varc); print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 15; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ print(varc) | closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ print(varc); closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ print(varc); closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, 50, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ closeRFile(varf); }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, 50, ]
+FileTable:
+{ test.in -> java.io.BufferedReader@16f86c2b; }
+Heap:
+{ }
+
+
+
+------------------------
+
+
+------------------------
+
+ID: 4
+ExeStack:
+{ }
+SymTable:
+{ varf -> test.in; varc -> 50; }
+Out:
+[ 15, 50, ]
+FileTable:
+{ }
+Heap:
+{ }
+
+
+
+------------------------
+

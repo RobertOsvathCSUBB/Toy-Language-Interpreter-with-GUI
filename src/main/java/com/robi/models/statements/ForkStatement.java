@@ -25,7 +25,7 @@ public class ForkStatement implements IStatement
     {
         IStack<IStatement> newStack = new MyStack<>();
         IMap<String, IValue> newSymTable = state.getSymTable().clone();
-        PrgState newState = new PrgState(newStack, newSymTable, state.getOut(), state.getFileTable(), state.getHeap(), stm);
+        PrgState newState = new PrgState(newStack, newSymTable, state.getOut(), state.getFileTable(), state.getHeap(), state.getLatchTable(), stm);
         return newState;
     }
 

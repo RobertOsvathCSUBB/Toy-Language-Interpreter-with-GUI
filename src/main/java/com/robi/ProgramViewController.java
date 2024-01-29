@@ -7,7 +7,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
-
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Collections;
@@ -111,7 +110,6 @@ public class ProgramViewController
                     if (id.equals(newVal) && this.currentShownThreadID != Integer.parseInt(newVal))
                     {
                         this.currentShownThreadID = Integer.parseInt(newVal);
-                        this.threadList.setValue(this.currentShownThreadID.toString());
                         System.out.println("Thread changed to " + newVal);
                         this.refresh();
                     }
@@ -174,7 +172,11 @@ public class ProgramViewController
                                                                                 return future.get();
                                                                             }
                                                                             catch (Exception e) {
-                                                                                System.out.println(e.getMessage());
+                                                                                Alert alert = new Alert(AlertType.ERROR);
+                                                                                alert.setTitle("Error");
+                                                                                alert.setHeaderText("Error while executing program");
+                                                                                alert.setContentText(e.getMessage());
+                                                                                alert.showAndWait();
                                                                                 return null;
                                                                             }
                                                                         })
@@ -185,7 +187,6 @@ public class ProgramViewController
 
             states.forEach(prg -> {
                 try {
-                    System.out.println(prg.toString());
                     this.repo.logPrgStateExec(prg);
                 } catch (MyException e) {
                     System.out.println(e.getMessage());
@@ -197,7 +198,6 @@ public class ProgramViewController
             System.out.println(e.getMessage());
             System.exit(1);
         }
-        System.out.println("Repo size: " + this.repo.getPrgList().size());
         this.refresh();
     }
 
@@ -234,9 +234,27 @@ public class ProgramViewController
     }
 
     private List<PrgState> removeCompletedPrg(List<PrgState> states)
-    {
+    {   
         return states.stream()
-                     .filter(p -> p.isNotCompleted())
+                     .filter(p -> {
+                        if (!p.isNotCompleted())
+                        {
+                            if (p.getID().equals(this.currentShownThreadID))
+                            {
+                                for (PrgState prg : states)
+                                {
+                                    if (prg.getID() != this.currentShownThreadID && prg.isNotCompleted())
+                                    {
+                                        this.currentShownThreadID = prg.getID();
+                                        break;
+                                    }
+                                }
+                                this.refresh();
+                            }
+                            return false;
+                        }
+                        return true;
+                     })
                      .collect(Collectors.toList());
     }
 
@@ -267,17 +285,18 @@ public class ProgramViewController
                                                      .map(Object::toString)
                                                      .collect(Collectors.toList())
         );
+        this.threadList.setValue(this.currentShownThreadID.toString());
         
+        List<String> newStackEntries = this.repo.getPrgList().stream()
+                                                             .filter(p -> p.getID().equals(this.currentShownThreadID))
+                                                             .map(PrgState::getStack)
+                                                             .map(IStack::getAll)
+                                                             .flatMap(Collection::stream)
+                                                             .map(IStatement::toString)
+                                                            .collect(Collectors.toList());
+        Collections.reverse(newStackEntries);
         this.stackEntries.clear();
-        this.stackEntries.addAll(this.repo.getPrgList().stream()
-                                                        .filter(p -> p.getID().equals(this.currentShownThreadID))
-                                                        .map(PrgState::getStack)
-                                                        .map(IStack::getAll)
-                                                        .flatMap(Collection::stream)
-                                                        .map(IStatement::toString)
-                                                        .sorted(Collections.reverseOrder())
-                                                        .collect(Collectors.toList())
-        );
+        this.stackEntries.addAll(newStackEntries);
 
 
         this.symTableEntries.clear();

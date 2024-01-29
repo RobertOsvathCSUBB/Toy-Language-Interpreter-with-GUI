@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.List;
 import com.robi.models.ADTs.MyHeap;
+import com.robi.models.ADTs.MyLatchTable;
 import com.robi.models.ADTs.MyList;
 import com.robi.models.ADTs.MyMap;
 import com.robi.models.ADTs.MyStack;
@@ -33,7 +34,6 @@ import com.robi.models.types.StringType;
 import com.robi.models.values.IValue;
 import com.robi.models.values.IntValue;
 import com.robi.models.values.StringValue;
-
 
 public class Interpreter 
 {
@@ -205,7 +205,7 @@ public class Interpreter
 
         try {
             program1.typecheck(new MyMap<String, IType>());
-            PrgState state1 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), program1);
+            PrgState state1 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program1);
             programs.add(state1);
         }
         catch (Exception e) {
@@ -214,7 +214,7 @@ public class Interpreter
 
         try {
             program2.typecheck(new MyMap<String, IType>());
-            PrgState state2 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), program2);
+            PrgState state2 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program2);
             programs.add(state2);
         }
         catch (Exception e) {
@@ -223,7 +223,7 @@ public class Interpreter
 
         try {
             program3.typecheck(new MyMap<String, IType>());
-            PrgState state3 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), program3);
+            PrgState state3 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program3);
             programs.add(state3);
         }
         catch (Exception e) {
@@ -232,7 +232,7 @@ public class Interpreter
 
         try {
             program4.typecheck(new MyMap<String, IType>());
-            PrgState state4 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), program4);
+            PrgState state4 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program4);
             programs.add(state4);
         }
         catch (Exception e) {
@@ -241,7 +241,7 @@ public class Interpreter
 
         try {
             program5.typecheck(new MyMap<String, IType>());
-            PrgState state5 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), program5);
+            PrgState state5 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program5);
             programs.add(state5);
         }
         catch (Exception e) {
@@ -250,7 +250,7 @@ public class Interpreter
 
         try {
             program6.typecheck(new MyMap<String, IType>());
-            PrgState state6 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), program6);
+            PrgState state6 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program6);
             programs.add(state6);
         }
         catch (Exception e) {
@@ -259,7 +259,7 @@ public class Interpreter
 
         try {
             program7.typecheck(new MyMap<String, IType>());
-            PrgState state7 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), program7);
+            PrgState state7 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program7);
             programs.add(state7);
         }
         catch (Exception e) {
@@ -268,7 +268,7 @@ public class Interpreter
 
         try {
             program8.typecheck(new MyMap<String, IType>());
-            PrgState state8 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), program8);
+            PrgState state8 = new PrgState(new MyStack<IStatement>(), new MyMap<String, IValue>(), new MyList<IValue>(), new MyMap<StringValue, BufferedReader>(), new MyHeap(), new MyLatchTable(), program8);
             programs.add(state8);
         }
         catch (Exception e) {

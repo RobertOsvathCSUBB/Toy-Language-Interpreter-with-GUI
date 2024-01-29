@@ -13,16 +13,18 @@ public class PrgState
     private IList<IValue> out;
     private IMap<StringValue, BufferedReader> fileTable;
     private IHeap heap;
+    private ILatchTable latchTable;
     private IStatement originalPrg;
     private Integer uniqueId;
     static Integer ID_COUNT = 0;
 
-    public PrgState(IStack<IStatement> stk, IMap<String, IValue> map, IList<IValue> out, IMap<StringValue, BufferedReader> ft, IHeap hp, IStatement prg) {
+    public PrgState(IStack<IStatement> stk, IMap<String, IValue> map, IList<IValue> out, IMap<StringValue, BufferedReader> ft, IHeap hp, ILatchTable lt, IStatement prg) {
         this.exeStack = stk;
         this.symTable = map;
         this.out = out;
         this.fileTable = ft;
         this.heap = hp;
+        this.latchTable = lt;
         this.originalPrg = prg;
         this.uniqueId = PrgState.getId();
         this.exeStack.push(prg);
@@ -70,6 +72,14 @@ public class PrgState
 
     public void setHeap(IHeap hp) {
         this.heap = hp;
+    }
+
+    public ILatchTable getLatchTable() {
+        return this.latchTable;
+    }
+
+    public void setLatchTable(ILatchTable lt) {
+        this.latchTable = lt;
     }
 
     public IStatement getOriginalPrg() {
