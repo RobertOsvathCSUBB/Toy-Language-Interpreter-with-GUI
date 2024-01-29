@@ -30,8 +30,6 @@ public class NewLatchStatement implements IStatement
         IValue exprVal = this.exp.evaluate(symTable, state.getHeap());
         if (!exprVal.getType().equals(new IntType()))
             throw new MyException("Expression must be of type int");
-        
-        System.out.println(exprVal.toString());
 
         IValue varVal = symTable.get(var);
         if (!varVal.getType().equals(new IntType()))
@@ -40,7 +38,6 @@ public class NewLatchStatement implements IStatement
         Integer newFreeLocation = latchTable.nextFree();
         symTable.update(var, new IntValue(newFreeLocation));
         IntValue num = (IntValue)exprVal;
-        System.out.println(num.getValue());
         latchTable.add(newFreeLocation, num.getValue());
 
         return null;

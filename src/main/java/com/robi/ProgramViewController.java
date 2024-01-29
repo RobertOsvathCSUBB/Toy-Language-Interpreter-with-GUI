@@ -109,7 +109,7 @@ public class ProgramViewController
         locationCol.setCellValueFactory(p -> new SimpleIntegerProperty(p.getValue().getKey()).asObject());
         locationCol.setMinWidth(100);
         TableColumn<Pair<Integer, Integer>, Integer> counterCol = new TableColumn<>("Count");
-        counterCol.setCellValueFactory(p -> new SimpleIntegerProperty(p.getValue().getKey()).asObject());
+        counterCol.setCellValueFactory(p -> new SimpleIntegerProperty(p.getValue().getValue()).asObject());
         counterCol.setMinWidth(100);
 
 
@@ -129,7 +129,7 @@ public class ProgramViewController
                     }
                 });
             });
-            this.stackList.setItems(stackEntries);
+            this.stackList.setItems(this.stackEntries);
             this.symTable.getColumns().addAll(nameColumn, valueColumn2);
             this.symTable.setItems(this.symTableEntries);
             this.latchTable.getColumns().addAll(locationCol, counterCol);
@@ -200,14 +200,6 @@ public class ProgramViewController
                                                                         .collect(Collectors.toList());
 
             states.addAll(newStates);
-
-            states.forEach(prg -> {
-                try {
-                    this.repo.logPrgStateExec(prg);
-                } catch (MyException e) {
-                    System.out.println(e.getMessage());
-                }
-            });
             this.repo.setPrgList(states);
         } 
         catch (Exception e) {
@@ -327,8 +319,7 @@ public class ProgramViewController
 
         this.latchTableEntries.clear();
         this.latchTableEntries.addAll(this.repo.getPrgList().get(0).getLatchTable().entrySet().stream()
-                                                                                        .map(e -> new Pair<>(e.getKey(), e.getValue()))
-                                                                                        .collect(Collectors.toList())
-        );
+                                                                                                    .map(p -> new Pair<>(p.getKey(), p.getValue()))
+                                                                                                    .collect(Collectors.toList()));
     }
 }
